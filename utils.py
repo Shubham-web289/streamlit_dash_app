@@ -92,7 +92,7 @@ def func_dash_app_del_column(df, port=8050, col_delete=True, add_row=False):
                     return f"❌ Error: {e}"
             return ""
 
-        app.run(debug=False, port=port, use_reloader=False)
+        app.run_server(debug=False, port=port, use_reloader=False)
 
     # ----------------------------
     # Start Dash in background thread
